@@ -3,8 +3,8 @@ Welcome to Jonathan Elder's ePortfolio, showcasing my school projects and academ
 
 Classes taken in the order listed:
 
-CPSC 1210 Introduction to Computer Science I
-CPSC 3240 Discrete Structures
+CPSC 1210 Introduction to Computer Science I\n
+CPSC 3240 Discrete Structures\n
 CPSC 1220 Introduction to Computer Science II
 CPSC 1230 Data Structures
 CPSC 3300 Computer Organization and Assembly Language Programming
