@@ -32,8 +32,6 @@ The computer science program prepares students to attain the educational objecti
 
 ### Textbook and Resource List
 
-#### Required Textbook
-(An All Access eBook has been selected for this course and the fee will be charged to your AU ebill unless you cancel - for details see announcement “eBook for CPSC 1210”)
 
 - **Lewis, J., & Loftus, W. (2017)**. *Java software solutions: Foundations of program design* (9th ed.). Boston, MA: Pearson.  
   ISBN-13: 978-0134462028  
