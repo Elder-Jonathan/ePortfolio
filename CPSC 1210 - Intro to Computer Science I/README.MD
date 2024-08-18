@@ -37,9 +37,6 @@ The computer science program prepares students to attain the educational objecti
   ISBN-13: 978-0134462028  
   ISBN-10: 0134462025
 
-#### Additional Readings
-- Any additional reading assignments will be listed on the “Instructional Resources” page within each module.
-
 ### Course Structure
 The course will follow this general pattern:
 
