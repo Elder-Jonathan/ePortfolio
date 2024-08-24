@@ -1,0 +1,41 @@
+// The overall UPDATED function that will calculate maximum revenue that also includes cutting cost and the return the solution
+Algorithm UpdatedMemoizedCutRod(priceArray, rodLength)
+    // Create arrays to store the maximum revenue for each length and the cuts
+    Initialize revenueArray[0...rodLength] with -Infinity
+    Initialize solutionArray[0...rodLength] with 0
+    
+    // Calculate the maximum revenue and fill the solution array
+    maxRevenue <- MemoizedCutRodAux(priceArray, rodLength, revenueArray, solutionArray)
+    
+    // Construct the solution by tracking the cuts
+    cuts <- empty list
+    length <- rodLength
+    while length > 0
+        cuts.append(solutionArray[length])
+        length <- length - solutionArray[length]
+    
+    // Return both the maximum revenue and the cuts
+    return (maxRevenue, cuts)
+
+// Aux function to calculate the maximum revenue and takes note of cuts.
+Function MemoizedCutRodAux(priceArray, rodLength, revenueArray, solutionArray)
+    // If the revenue for length rodLength is already calculated, return it
+    if revenueArray[rodLength] >= 0
+        return revenueArray[rodLength]
+    
+    // Initialize the maximum revenue
+    maxRevenue <- 0
+    if rodLength == 0
+        maxRevenue <- 0
+    else
+        maxRevenue <- -Infinity
+        // Loop over each possible cut length i
+        for i from 1 to rodLength
+            currentRevenue <- priceArray[i] + MemoizedCutRodAux(priceArray, rodLength - i, revenueArray, solutionArray)
+            if currentRevenue > maxRevenue
+                maxRevenue <- currentRevenue
+                solutionArray[rodLength] <- i
+    
+    // Store the calculated maximum revenue
+    revenueArray[rodLength] <- maxRevenue
+    return maxRevenue

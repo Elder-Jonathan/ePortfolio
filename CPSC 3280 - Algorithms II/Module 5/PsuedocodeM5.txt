@@ -1,0 +1,30 @@
+// The overall function that will calculate maximum revenue including cutting cost.
+Algorithm ModifiedRodCutting(p, n, c)
+    // Creates an array initialized with nothing that will store "maximum revenue" for each length.
+    Initialize R[0...n] with zeros
+    
+    // This will loop at each length defined as j from 1 to n.
+    for j from 1 to n do
+	
+        // Initializes a maximum revenue for length j that could never be reached to start.
+        Set maxRevenue to -Infinity
+        
+        // Then loop over every possible cut length defined "i" from 1 to j.
+        for i from 1 to j do
+            // Calculate revenue based on whether a cut is made
+            if j == i then
+                // When no cut is made, the maxRevenue will be price of rod of length i.
+                Set revenue to p[i]
+            else
+                // After a cut is made, then make sure to include the cost of that cut.
+                Set revenue to p[i] + R[j - i] - c
+            
+            // Make sure to then set the maximum revenue for length j.
+            if revenue > maxRevenue then
+                Set maxRevenue to revenue
+        
+        // // Store the new maxRevenue that was found for rod of length j in the array.
+        Set R[j] to maxRevenue
+    
+    // This simply returns the maximum revenue for a rod of given length n.
+    return R[n]
