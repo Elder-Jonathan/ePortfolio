@@ -1,0 +1,3 @@
+../resource/scripts/build.sh: line 21: -d: command not found
+../resource/scripts/build.sh: line 22: -d: command not found
+../resource/scripts/build.sh: line 23: -d: command not found
