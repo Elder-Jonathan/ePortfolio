@@ -1,0 +1,105 @@
+/**
+ * Software Construction Fundamentals Module 3
+ * @author Jonathan Elder
+ * Styles.css
+ */
+
+/* Stylings to be applied to the overall root. */
+.root {
+  -fx-background-color: #0C2340;  /* Auburn Navy */
+  -fx-padding: 10;
+  -fx-border-radius: 4;
+  -fx-border-width: 1;
+}
+
+/* Input text fields (Ident, IATA, Local Code) */
+.input-textfield {
+  -fx-font-family: "Segoe UI", sans-serif;
+  -fx-font-size: 18px;
+  -fx-text-fill: #FFFFFF;
+  -fx-prompt-text-fill: #FFFFFF;  /* Ensure placeholder text is also white */
+  -fx-border-color: #FF8200; /* Auburn Orange */
+  -fx-background-color: #A9A9A9; /* Default lighter grey */
+  -fx-border-width: 1;
+  -fx-border-radius: 4;
+  -fx-background-radius: 4;
+  -fx-transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect - Slightly darker grey */
+.input-textfield:hover {
+  -fx-background-color: #8F8F8F;
+}
+
+/* Focus effect - Auburn's Orange highlight */
+.input-textfield:focused {
+  -fx-background-color: #FFFFFF; /* Turns white when clicked */
+  -fx-text-fill: #0C2340; /* Navy text */
+  -fx-border-color: #FF8200; /* Orange border */
+  -fx-focus-color: #FF8200;
+  -fx-faint-focus-color: rgba(255,130,0,0.3);
+}
+
+/* Response text fields (Type, Name, Elevation, Country, Region, Municipality) */
+.response-textfield {
+  -fx-font-family: "Segoe UI", sans-serif;
+  -fx-font-size: 18px; /* Increase the text size slightly */
+  -fx-text-fill: #FFFFFF;  /* Ensure text inside is white */
+  -fx-prompt-text-fill: #FFFFFF;  /* Ensure placeholder text is also white */
+  -fx-background-color: #A9A9A9;
+  -fx-border-color: #FF8200; /* Auburn Orange */
+  -fx-border-width: 1;
+  -fx-border-radius: 4;
+  -fx-background-radius: 4;
+  -fx-alignment: center;
+}
+
+.response-textfield:focused {
+  -fx-border-color: #FF8200;
+  -fx-focus-color: transparent;
+  -fx-text-fill: #FFFFFF;
+  -fx-prompt-text-fill: #FFFFFF;
+}
+
+/* Button styling */
+.auburn-button {
+  -fx-background-color: #FF8200; /* Auburn Orange */
+  -fx-text-fill: white;
+  -fx-font-family: "Segoe UI", sans-serif;
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-border-radius: 4;
+  -fx-background-radius: 4;
+  -fx-border-width: 2;
+  -fx-border-color: #FF8200;
+  -fx-padding: 10px 20px;
+  -fx-cursor: hand;
+  -fx-transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect - Darker Auburn Orange */
+.auburn-button:hover {
+  -fx-background-color: #E57200; /* Slightly darker orange */
+  -fx-border-color: #E57200;
+}
+
+/* Click effect - Auburn Navy with white text */
+.auburn-button:pressed {
+  -fx-background-color: #0C2340; /* Auburn Navy */
+  -fx-text-fill: white;
+  -fx-border-color: #FF8200; /* Auburn Orange border remains */
+}
+
+/* WebView stylings */
+.auburn-webview {
+  -fx-background-color: #FF8200;
+  -fx-border-color: #FF8200;
+  -fx-border-width: 3;
+  -fx-border-radius: 4;
+  -fx-background-radius: 4;
+}
+
+webview {
+   -fx-border-color: #FF8200;
+   -fx-border-width: 3;
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.web.WebView?>
+<?import javafx.scene.control.Button?>
+<?import java.lang.String?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="edu.au.cpsc.module3.AirportController" spacing="10" stylesheets="@styles.css">
+   <styleClass>
+      <String fx:value="root"/>
+   </styleClass>
+
+   <!-- Editable input fields -->
+   <TextField fx:id="identField" promptText="Enter ident" onAction="#searchAirport">
+      <styleClass>
+         <String fx:value="input-textfield"/>
+      </styleClass>
+   </TextField>
+
+   <TextField fx:id="iataCodeField" promptText="Enter iata code" onAction="#searchAirport">
+      <styleClass>
+         <String fx:value="input-textfield"/>
+      </styleClass>
+   </TextField>
+
+   <TextField fx:id="localCodeField" promptText="Enter local code" onAction="#searchAirport">
+      <styleClass>
+         <String fx:value="input-textfield"/>
+      </styleClass>
+   </TextField>
+
+   <!-- Search button placed under the top three fields -->
+   <Button text="Search" onAction="#searchAirport">
+      <styleClass>
+         <String fx:value="auburn-button"/>
+      </styleClass>
+   </Button>
+
+   <!-- Non-editable response fields -->
+   <TextField fx:id="typeField" editable="false" focusTraversable="false" promptText="Type" alignment="CENTER">
+      <styleClass>
+         <String fx:value="response-textfield"/>
+      </styleClass>
+   </TextField>
+
+   <TextField fx:id="nameField" editable="false" focusTraversable="false" promptText="Name" alignment="CENTER">
+      <styleClass>
+         <String fx:value="response-textfield"/>
+      </styleClass>
+   </TextField>
+
+   <TextField fx:id="elevationField" editable="false" focusTraversable="false" promptText="Elevation" alignment="CENTER">
+      <styleClass>
+         <String fx:value="response-textfield"/>
+      </styleClass>
+   </TextField>
+
+   <TextField fx:id="countryField" editable="false" focusTraversable="false" promptText="Country" alignment="CENTER">
+      <styleClass>
+         <String fx:value="response-textfield"/>
+      </styleClass>
+   </TextField>
+
+   <TextField fx:id="regionField" editable="false" focusTraversable="false" promptText="Region" alignment="CENTER">
+      <styleClass>
+         <String fx:value="response-textfield"/>
+      </styleClass>
+   </TextField>
+
+   <TextField fx:id="municipalityField" editable="false" focusTraversable="false" promptText="Municipality" alignment="CENTER">
+      <styleClass>
+         <String fx:value="response-textfield"/>
+      </styleClass>
+   </TextField>
+
+   <!-- WebView with a border and a repeating Auburn logo background -->
+   <WebView fx:id="webView" VBox.vgrow="ALWAYS">
+      <styleClass>
+         <String fx:value="auburn-webview"/>
+      </styleClass>
+   </WebView>
+</VBox>
