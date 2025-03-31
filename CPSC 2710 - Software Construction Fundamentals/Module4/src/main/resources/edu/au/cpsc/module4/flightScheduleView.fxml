@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="edu.au.cpsc.module4.FlightScheduleController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <TableView fx:id="flightTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="flightDesignatorColumn" text="Flight Designator" />
+            <TableColumn fx:id="departureAirportColumn" text="Departure Airport Ident" />
+            <TableColumn fx:id="arrivalAirportColumn" text="Arrival Airport Ident" />
+            <TableColumn fx:id="dayOfWeekColumn" text="Days of Week" />
+        </columns>
+    </TableView>
+
+    <VBox spacing="10">
+        <TextField fx:id="flightDesignatorField" promptText="Flight Designator:" />
+        <TextField fx:id="departureAirportField" promptText="Departure Airport Ident:" />
+        <!-- NEW: TextField for Departure Time -->
+        <TextField fx:id="departureTimeField" promptText="Departure Time (HH:MM):" />
+        <TextField fx:id="arrivalAirportField" promptText="Arrival Airport Ident:" />
+        <TextField fx:id="arrivalTimeField" promptText="Arrival Time (HH:MM):" />
+
+        <HBox spacing="5">
+            <ToggleButton fx:id="mondayButton" text="Mon" />
+            <ToggleButton fx:id="tuesdayButton" text="Tue" />
+            <ToggleButton fx:id="wednesdayButton" text="Wed" />
+            <ToggleButton fx:id="thursdayButton" text="Thu" />
+            <ToggleButton fx:id="fridayButton" text="Fri" />
+            <ToggleButton fx:id="saturdayButton" text="Sat" />
+            <ToggleButton fx:id="sundayButton" text="Sun" />
+        </HBox>
+    </VBox>
+
+    <HBox spacing="10">
+        <Button fx:id="addButton" text="Add" onAction="#addFlightAction"/>
+        <Button fx:id="updateButton" text="Update" onAction="#UpdateButtonAction"/>
+        <Button fx:id="removeButton" text="Remove" onAction="#RemoveButtonAction"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button fx:id="saveButton" text="Save" onAction="#SaveButtonAction"/>
+        <Button fx:id="loadButton" text="Load" onAction="#LoadButtonAction"/>
+    </HBox>
+</VBox>
