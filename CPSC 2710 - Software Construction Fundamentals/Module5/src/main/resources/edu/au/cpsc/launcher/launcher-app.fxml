@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gridPane" styleClass="grid-pane" hgap="3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@style/main.css" vgap="3" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.au.cpsc.launcher.LauncherController">
+
+    <Button id="airports-btn" fx:id="airportsBtn"
+            maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            text="Airports" textAlignment="CENTER"
+            GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+    <Button id="seat-reservation-btn" fx:id="seatReservationBtn"
+            maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            text="Seat Reservation"
+            GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Button id="flight-schedule-btn" fx:id="flightScheduleBtn"
+            maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            text="Flight Schedule"
+            GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+    <Button id="aircraft-btn" fx:id="aircraftBtn"
+            maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            text="Aircraft"
+            GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="50" />
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="50" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="50" vgrow="ALWAYS" />
+        <RowConstraints percentHeight="50" vgrow="ALWAYS" />
+    </rowConstraints>
+
+</GridPane>
