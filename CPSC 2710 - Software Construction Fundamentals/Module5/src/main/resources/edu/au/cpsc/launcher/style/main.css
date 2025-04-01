@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'ToonyLine';
+    src: url('ToonyLine.otf');
+}
+
+
+#airports-btn {
+    font-family: 'ToonyLine';
+    -fx-background-color: rgba(255, 87, 51, 0.5);
+    -fx-text-fill: white;
+    -fx-background-image: url('airplane.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 5px;
+    -fx-font-size: 30px;
+     -fx-border-color: black;  /* Add this line for border color */
+        -fx-border-width: 2;
+}
+
+/* Seat Reservation button */
+#seat-reservation-btn {
+    font-family: 'ToonyLine';
+    -fx-background-color: rgba(187,159,170, 0.5);
+    -fx-text-fill: white;
+    -fx-background-image: url('reception.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 5px;
+    -fx-font-size: 30px;
+     -fx-border-color: black;
+        -fx-border-width: 2;
+}
+
+/* Flight Schedule button */
+#flight-schedule-btn {
+    font-family: 'ToonyLine';
+    -fx-background-color: rgba(255, 87, 51, 0.5);
+    -fx-text-fill: white;
+    -fx-background-image: url('schedule.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 5px;
+    -fx-font-size: 30px;
+     -fx-border-color: black;  /* Add this line for border color */
+        -fx-border-width: 2;
+}
+
+/* Aircraft button */
+#aircraft-btn {
+    font-family: 'ToonyLine';
+    -fx-background-color: rgba(152,112,127, 0.5);
+    -fx-text-fill: white;
+    -fx-background-image: url('aircraft.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 5px;
+    -fx-font-size: 30px;
+     -fx-border-color: black;
+        -fx-border-width: 2;
+        -fx-font-weight: bold;
+}
+
+.grid-pane {
+    -fx-background-image: url('background.png');
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-opacity: 0.9;
+}
