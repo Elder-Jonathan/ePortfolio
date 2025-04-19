@@ -19,7 +19,8 @@ The computer science program apart of the Samuel Ginn College of Engineering at 
 - **10**: A knowledge of contemporary issues appropriate to the discipline.
 - **11**: A recognition of the need for and an ability to engage in life-long learning and continuing professional development.
 
-### Classes Taken in the Order Listed:
+### Classes Taken
+Classes were taken in the order listed.
 
 - **CPSC 1210** Introduction to Computer Science I
 - **CPSC 3240** Discrete Structures
@@ -42,5 +43,7 @@ The computer science program apart of the Samuel Ginn College of Engineering at 
 - **CPSC 4970** - Special Topics: Python Programming
 - **CPSC 4970** - Special Topics: C++ Programming
 
+### Executable Class Projects
+I have taken a selection of my class projects and turned them into installable/executable applications for easier viewing. Most all of these project files can be downloaded and ran locally.
 
 
