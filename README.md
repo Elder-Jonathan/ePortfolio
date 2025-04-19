@@ -1,4 +1,4 @@
-# Jonathan Elder's ePortfolio
+#  <p align = "center">Jonathan Elder's ePortfolio </p>
 
 ![Graduation Banner](Photos/JElderGraduation.png) 
 
