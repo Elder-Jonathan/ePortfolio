@@ -16,8 +16,7 @@ The computer science program apart of the Samuel Ginn College of Engineering at 
 - **7**: An ability to communicate effectively with a range of audiences.
 - **8**: An understanding of professional, ethical, legal, security, and societal issues and responsibilities appropriate to the discipline.
 - **9**: An ability to analyze the impact of computing and software solutions in an individual, organizational, societal, global, and economic context.
-- **10**: A knowledge of contemporary issues appropriate to the discipline.
-- **11**: A recognition of the need for and an ability to engage in life-long learning and continuing professional development.
+- **10**: A recognition of the need for and an ability to engage in life-long learning and continuing professional development.
 
 ### Classes Taken
 Classes were taken in the order listed.
