@@ -1,4 +1,5 @@
-# ePortfolio
+# Jonathan Elder's
+## ePortfolio
 ![Graduation Banner](Photos/JElderGraduation.png) 
 Welcome to Jonathan Elder's academic ePortfolio. This is meant to showcase my school projects and academic work from Auburn University. Here you'll find a collection of my coursework, assignments, and personal projects, to help demonstrate my skills and progress as a student.
 
