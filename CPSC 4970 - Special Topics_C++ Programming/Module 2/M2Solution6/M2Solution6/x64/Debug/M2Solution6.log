@@ -1,0 +1,3 @@
+﻿  Module2Solution6.cpp
+C:\Users\elder\source\repos\CPSC 4970 C++ Programming\M2Solution6\Module2Solution6.cpp(14,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  M2Solution6.vcxproj -> C:\Users\elder\source\repos\CPSC 4970 C++ Programming\M2Solution6\x64\Debug\M2Solution6.exe
