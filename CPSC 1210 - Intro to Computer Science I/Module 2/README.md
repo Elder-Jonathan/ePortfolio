@@ -17,15 +17,15 @@ This folder contains the activities and projects I completed for **CPSC 1210 - I
 ## 📸 Project 2 – Part 1
 
 ![Project 2 – Part 1](Photos/Project2_part1_1.png)
-(Photos/Project2_part1_2.png)
+!(Photos/Project2_part1_2.png)
 
 ---
 
 ## 📸 Project 2 – Part 2
 
 ![Project 2 – Part 2](Photos/Project2_part2_1.png)
-(Photos/Project2_part2_2.png)
-(Photos/Project2_part2_3.png)
+!(Photos/Project2_part2_2.png)
+!(Photos/Project2_part2_3.png)
 
 ---
 
