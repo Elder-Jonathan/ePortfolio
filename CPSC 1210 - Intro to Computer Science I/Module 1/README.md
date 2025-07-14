@@ -1,6 +1,6 @@
 # Module 1 – CPSC 1210: Intro to Computer Science I
 
-This folder contains the activities and projects completed for **CPSC 1210 - Intro to Computer Science I**. Each screenshot demonstrates a successful execution of the corresponding activity or project for the module.
+This folder contains the activities and projects I completed for **CPSC 1210 - Intro to Computer Science I**. Each screenshot demonstrates a successful execution of the corresponding activity or project for the module.
 
 > **IDE Used:** All programs were developed and run using [jGRASP](https://jgrasp.org/), a lightweight development environment that provides simple visualization for Java and other programming languages. It is ideal for beginner-level programming courses due to its clear interface and easy debugging features.
 
