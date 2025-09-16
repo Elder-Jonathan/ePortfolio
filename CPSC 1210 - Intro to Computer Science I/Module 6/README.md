@@ -1,3 +1,4 @@
+
 # Module 6 – CPSC 1210: Intro to Computer Science I
 
 This folder contains the activities and projects I completed for Module 6 within **CPSC 1210 - Intro to Computer Science I**. Each screenshot demonstrates a successful execution of the corresponding activity or project for the module.
@@ -14,28 +15,38 @@ This folder contains the activities and projects I completed for Module 6 within
 
 ## 📸 Project 6
 
-**The result of the user selecting ‘p’ to Print Ellipsoid List is shown below.**
+### Upon Running Program
+**Below is output produced after printing the action codes with short descriptions, followed by the prompt with the action codes waiting for the user to select.**
 ![Project 6 - 1st Execution](Photos/Project6_1.png)
 
-**The result of the user selecting ‘s’ to print the summary for the list is shown below.**
+### Reading File
+**Below shows the screen after the user entered ‘r’ and then (when prompted) the file name.**
 ![Project 6 - 2nd Execution](Photos/Project6_2.png)
 
-**The result of the user selecting ‘a’ to add an Ellipsoid object is shown below.**
+### Printing Ellipsoid List
+**The result of the user selecting ‘p’ to Print Ellipsoid List is shown below.**
 ![Project 6 - 3rd Execution](Photos/Project6_3.png)
 
-**Here is an example of the successful “delete” for an Ellipsoid object.**
+### Adding Ellipsoid Object to List
+**The result of the user selecting ‘a’ to add an Ellipsoid object is shown below.**
 ![Project 6 - 4th Execution](Photos/Project6_4.png)
 
-**Here is an example of the successful “find” for an Ellipsoid object.**
+### Deleting Ellipsoid Object from List
+**Here is an example of the successful “delete” for an Ellipsoid object.**
 ![Project 6 - 5th Execution](Photos/Project6_5.png)
 
-**Here is an example of the successful “edit” for an Ellipsoid object.**
+### Finding Ellipsoid Object within List
+**Here is an example of the successful “find” for an Ellipsoid object.**
 ![Project 6 - 6th Execution](Photos/Project6_6.png)
 
-****
+### Editing Ellipsoid Object within List
+**Here is an example of the successful “edit” for an Ellipsoid object.**
 ![Project 6 - 7th Execution](Photos/Project6_7.png)
 
+### Quiting Program
 **Below is an example of entering an invalid code, followed by an example of entering a ‘q’ to quit the application.**
+
+
 ![Project 6 - 8th Execution](Photos/Project6_8.png)
 ---
 
