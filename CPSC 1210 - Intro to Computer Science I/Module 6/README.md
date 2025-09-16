@@ -41,6 +41,8 @@ This folder contains the activities and projects I completed for Module 6 within
 
 ### Editing Ellipsoid Object within List
 **Here is an example of the successful “edit” for an Ellipsoid object.**
+
+
 ![Project 6 - 7th Execution](Photos/Project6_7.png)
 
 ### Quiting Program
