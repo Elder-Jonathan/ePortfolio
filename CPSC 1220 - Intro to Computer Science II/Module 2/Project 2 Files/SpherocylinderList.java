@@ -1,5 +1,5 @@
 /**
-* Intro to Computer Science 1220 Project 3
+* Intro to Computer Science 1220 Project 2 Part 2
 * Jonathan Elder
 * Date 9/10/2022
 */
@@ -194,4 +194,5 @@ public class SpherocylinderList {
       }
       return res;
    }
+
 }
