@@ -1,3 +1,8 @@
+/**
+* Intro to Computer Science 1220 Project 2 Test File
+* Jonathan Elder
+* Date 9/10/2022
+*/
 public class SpherocylinderListTest {
 
     public static void main(String[] args) {
@@ -35,4 +40,5 @@ public class SpherocylinderListTest {
             }
         }
     }
+
 }
