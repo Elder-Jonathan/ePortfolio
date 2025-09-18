@@ -8,7 +8,7 @@ This folder contains the activities and projects I completed for Module 1 within
 
 ## 📸 Activity 1 
 
-**Completed Java code for assignment.**
+**Completed Java code for activity assignment along with completed Junit test results.**
 
 ![Activity 1_1](Photos/Activity1_1.png)
 ![Activity 1_2](Photos/Activity1_2.png)
@@ -20,7 +20,7 @@ This folder contains the activities and projects I completed for Module 1 within
 
 ## 📸 Project 1
 
-**Test for with completed Junit test results.**
+**Completed Java code for project assignment along with completed Junit test results.**
 
 ![Project 1_1](Photos/Project1_1.png)
 ![Project 1_2](Photos/Project1_2.png)
