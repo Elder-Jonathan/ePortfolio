@@ -1,6 +1,6 @@
 # CPSC 1230 - Data Structures
 
-This is the Data Structures and Algorithms course in the Bachelor of Computer Science program at Auburn, and is one of the cornerstone courses for the curriculum. In this course, you will learn about developing programs that use data structures and collections to efficiently store data. Emphasis will be placed on the interplay between effective data structures and efficient algorithms.
+This is the Data Structures and Algorithms course as apart of the Bachelor of Computer Science program at Auburn University, and is one of the cornerstone courses for the curriculum. In this course, I learned about developing programs that use data structures and collections to efficiently store data. Emphasis was placed on the interplay between effective data structures and efficient algorithms.
 
 ## Course Outcomes
 By the end of this course, you should be able to:
