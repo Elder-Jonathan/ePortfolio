@@ -1,7 +1,7 @@
 # Module 1 Overview
 Programming Fundamentals: Problem-Solving, Correctness & Testing, and Generality
 
-##Module Objectives
+## Module Objectives
 - Apply the linear scan strategy to create solutions to problems in Java.
 - Assess Java programs on the basis of best-practice coding styles.
 - Create test cases to verify the functionality of programs written in Java.
