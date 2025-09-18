@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 
 /**
-* Project 1 Part 1 CPSC 1220 Intro to Computer Science II
+* Project 2 Part 1 CPSC 1220 Intro to Computer Science II
 * Jonathan Elder
 * Date 8/20/2022
 */
@@ -188,4 +188,5 @@ public class Spherocylinder implements Comparable<Spherocylinder> {
             return 1;
         }
     }
+
 }
