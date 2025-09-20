@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="edu.au.cpsc.part2.FlightScheduleController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <!-- Search and Filter Controls -->
+    <HBox spacing="10">
+        <Label text="Search:"/>
+        <TextField fx:id="searchField" promptText="Search flights..."/>
+        <Label text="Day:"/>
+        <ComboBox fx:id="dayFilterComboBox" prefWidth="120"/>
+    </HBox>
+
+    <!-- Main Table -->
+    <TableView fx:id="flightTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="flightDesignatorColumn" text="Flight Designator" />
+            <TableColumn fx:id="departureAirportColumn" text="Departure Airport Ident" />
+            <TableColumn fx:id="arrivalAirportColumn" text="Arrival Airport Ident" />
+            <TableColumn fx:id="dayOfWeekColumn" text="Days of Week" />
+        </columns>
+    </TableView>
+
+    <!-- Flight Detail Editor -->
+    <VBox spacing="10">
+        <TextField fx:id="flightDesignatorField" promptText="Flight Designator:" />
+        <TextField fx:id="departureAirportField" promptText="Departure Airport Ident:" />
+        <TextField fx:id="arrivalAirportField" promptText="Arrival Airport Ident:" />
+        <TextField fx:id="arrivalTimeField" promptText="Arrival Time:" />
+
+        <HBox spacing="5">
+            <ToggleButton fx:id="mondayButton" text="Mon" />
+            <ToggleButton fx:id="tuesdayButton" text="Tue" />
+            <ToggleButton fx:id="wednesdayButton" text="Wed" />
+            <ToggleButton fx:id="thursdayButton" text="Thu" />
+            <ToggleButton fx:id="fridayButton" text="Fri" />
+            <ToggleButton fx:id="saturdayButton" text="Sat" />
+            <ToggleButton fx:id="sundayButton" text="Sun" />
+        </HBox>
+    </VBox>
+
+    <!-- Action Buttons: Add / Update / Remove -->
+    <HBox spacing="10">
+        <Button fx:id="addButton" text="Add" onAction="#addFlightAction"/>
+        <Button fx:id="updateButton" text="Update" onAction="#UpdateButtonAction"/>
+        <Button fx:id="removeButton" text="Remove" onAction="#RemoveButtonAction"/>
+    </HBox>
+
+    <!-- Action Buttons: CSV Import/Export, Save, and Load -->
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button fx:id="importCSVButton" text="Import CSV" onAction="#importCSVAction"/>
+        <Button fx:id="exportCSVButton" text="Export CSV" onAction="#exportCSVAction"/>
+        <Button fx:id="saveButton" text="Save" onAction="#SaveButtonAction"/>
+        <Button fx:id="loadButton" text="Load" onAction="#LoadButtonAction"/>
+    </HBox>
+</VBox>
