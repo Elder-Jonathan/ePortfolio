@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cpsc.au.cpsc5130.hospitalmanagementapplication.RoomDetailsController"
+            stylesheets="@room-detail-view.css">
+
+    <!-- Auburn Themed Title Bar -->
+    <top>
+        <HBox alignment="CENTER" styleClass="title-container">
+            <Label text="Room Details" styleClass="header-label"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="12" alignment="CENTER" styleClass="main-container">
+
+            <HBox spacing="6" alignment="CENTER" styleClass="info-box">
+                <Label text="Room Number:" styleClass="label-title"/>
+                <Label fx:id="roomNumberLabel" text="1" styleClass="label-value"/>
+            </HBox>
+
+            <HBox spacing="6" alignment="CENTER" styleClass="info-box">
+                <Label text="Floor:" styleClass="label-title"/>
+                <Label fx:id="floorLabel" text="Not Available" styleClass="label-value"/>
+            </HBox>
+
+            <HBox spacing="6" alignment="CENTER" styleClass="info-box">
+                <Label text="Occupied:" styleClass="label-title"/>
+                <Label fx:id="occupiedLabel" text="Not Available" styleClass="label-value"/>
+            </HBox>
+
+            <HBox spacing="6" alignment="CENTER" styleClass="info-box">
+                <Label text="Assigned Patient:" styleClass="label-title"/>
+                <Label fx:id="assignedPatientLabel" text="Not Available" styleClass="label-value"/>
+            </HBox>
+
+            <HBox spacing="6" alignment="CENTER" styleClass="info-box">
+                <Label text="Assigned Doctor:" styleClass="label-title"/>
+                <Label fx:id="assignedDoctorLabel" text="Not Available" styleClass="label-value"/>
+            </HBox>
+
+            <HBox spacing="6" alignment="CENTER" styleClass="info-box">
+                <Label text="Admission Date:" styleClass="label-title"/>
+                <Label fx:id="admissionDateLabel" text="Not Available" styleClass="label-value"/>
+            </HBox>
+
+            <!-- Centered Buttons -->
+            <HBox spacing="25" alignment="CENTER">
+                <Button text="Back" onAction="#handleBack" styleClass="button-back"/>
+                <Button text="Discharge" onAction="#handleDischarge" styleClass="button-discharge"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

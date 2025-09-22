@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="cpsc.au.cpsc5130.hospitalmanagementapplication.MainController"
+            stylesheets="@main-layout.css">
+    <!-- Left Navigation Pane -->
+    <left>
+        <VBox spacing="12" styleClass="nav-pane">
+            <children>
+                <!-- Hospital Logo -->
+                <ImageView fx:id="logoImage" fitWidth="200" fitHeight="200" styleClass="nav-logo">
+                    <image>
+                        <Image url="@AUhospital_management_logo.png"/>
+                    </image>
+                </ImageView>
+                <Label text="Navigation" styleClass="nav-title"/>
+                <Button text="Hospital Room Layout" onAction="#handleRoomLayout" styleClass="nav-button" fx:id="btnRoomLayout"/>
+                <Button text="Employees" onAction="#handleEmployees" styleClass="nav-button" fx:id="btnEmployees"/>
+                <Button text="Patients" onAction="#handlePatients" styleClass="nav-button" fx:id="btnPatients"/>
+                <Button text="Admissions" onAction="#handleAdmissions" styleClass="nav-button" fx:id="btnAdmissions"/>
+                <Button text="Diagnoses" onAction="#handleDiagnoses" styleClass="nav-button" fx:id="btnDiagnoses"/>
+                <Button text="Treatments" onAction="#handleTreatments" styleClass="nav-button" fx:id="btnTreatments"/>
+            </children>
+            <padding>
+                <Insets top="15" right="15" bottom="15" left="15"/>
+            </padding>
+            <!-- Database Login Section at the bottom -->
+            <VBox spacing="5">
+                <Label text="Database Login" />
+                <TextField fx:id="txtDBName" promptText="DB Name" />
+                <TextField fx:id="txtDBUser" promptText="DB User" />
+                <TextField fx:id="txtDBPass" promptText="DB Password" />
+                <Label fx:id="lblStatus" text="Not connected" />
+                <HBox spacing="10">
+                    <Button text="Log In" onAction="#handleLogin"/>
+                    <Button text="Log Out" onAction="#handleLogout" disable="true" fx:id="btnLogout"/>
+                </HBox>
+            </VBox>
+        </VBox>
+    </left>
+
+    <!-- Center Content Area for Dynamic View Loading -->
+    <center>
+        <AnchorPane fx:id="contentPane" styleClass="content-pane"/>
+    </center>
+</BorderPane>

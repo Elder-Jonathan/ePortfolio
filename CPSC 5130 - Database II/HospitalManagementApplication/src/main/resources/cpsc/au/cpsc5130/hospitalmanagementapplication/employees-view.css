@@ -1,0 +1,148 @@
+/* --- Auburn-Themed Header Container --- */
+.header-container {
+    -fx-background-color: linear-gradient(to right, #0B2341, #123A5F); /* Auburn Blue Gradient */
+    -fx-padding: 15 20 20 20;
+    -fx-alignment: center;
+    -fx-border-color: #E86100; /* Auburn Orange Border */
+    -fx-border-width: 3px;
+    -fx-border-radius: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 12, 0, 0, 6);
+}
+
+/* --- Auburn-Themed Header Text --- */
+.header-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-font-family: "Arial Black";
+    -fx-letter-spacing: 1.5px;
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.6), 4, 0, 2, 2);
+}
+
+/* --- Table Styling --- */
+.employee-table {
+    -fx-background-color: rgba(11, 35, 65, 0.13); /* Lightest Auburn Blue */
+    -fx-border-color: #E86100; /* Auburn Orange */
+    -fx-border-width: 2px;
+}
+
+/* --- Table Column Headers (Auburn Blue Background, White Text) --- */
+.employee-table .column-header-background {
+    -fx-background-color: #0B2341; /* Auburn Blue */
+}
+
+.employee-table .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 5;
+}
+
+/* --- Table Row (Hover Effect - Light Auburn Blue) --- */
+.table-row-cell:hover {
+    -fx-background-color: rgba(11, 35, 65, 0.08);
+}
+
+/* --- Table Row (Selected - Auburn Orange with Transparency) --- */
+.table-row-cell:selected {
+    -fx-background-color: rgba(232, 97, 0, 0.3); /* Transparent Auburn Orange */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(232, 97, 0, 0.7), 10, 0, 0, 5);
+}
+
+/* --- Fix for Selected Text Inside Row (Ensure Visibility) --- */
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+/* --- Details Section Styling --- */
+.details-container {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-padding: 15;
+    -fx-border-color: #E86100; /* Auburn Orange */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 8, 0, 0, 4);
+}
+
+/* --- Form Fields (TextFields & TextArea) --- */
+.text-field, .description-text {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: #0B2341;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 8;
+    -fx-font-size: 16px;
+}
+
+/* --- Buttons (Auburn Style) --- */
+.button {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-border-radius: 0;
+    -fx-border-width: 2px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* --- Add Button (Auburn Blue) --- */
+.button-add {
+    -fx-background-color: #0B2341;
+    -fx-text-fill: white;
+    -fx-border-color: #E86100;
+}
+
+.button-add:hover {
+    -fx-background-color: rgba(11, 35, 65, 0.8);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* --- Update Button (Light Blue Highlight) --- */
+.button-update {
+    -fx-background-color: rgba(11, 35, 65, 0.6);
+    -fx-text-fill: white;
+    -fx-border-color: #E86100;
+}
+
+.button-update:hover {
+    -fx-background-color: rgba(11, 35, 65, 0.8);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* --- Delete Button (Auburn Orange) --- */
+.button-delete {
+    -fx-background-color: #E86100;
+    -fx-text-fill: white;
+    -fx-border-color: #0B2341;
+}
+
+.button-delete:hover {
+    -fx-background-color: rgba(232, 97, 0, 0.8);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* --- Hover Effect for Form Fields --- */
+.text-field:hover, .description-text:hover {
+    -fx-border-color: #E86100;
+}
+
+/* --- Slide-In Animation for Form Area --- */
+@keyframes slideIn {
+    0% { -fx-translate-y: -20px; -fx-opacity: 0; }
+    100% { -fx-translate-y: 0; -fx-opacity: 1; }
+}
+
+.details-container {
+    -fx-animation: slideIn 0.5s ease-in-out;
+}
+
+.employee-table .column-header .label {
+    -fx-text-fill: white !important;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}

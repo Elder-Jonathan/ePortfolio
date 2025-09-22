@@ -1,0 +1,99 @@
+/* --- Main Background Styling --- */
+BorderPane {
+    -fx-background-color: rgba(11, 35, 65, 0.13); /* Light Auburn Blue */
+}
+
+/* --- Navigation Pane (Most Animated Section) --- */
+.nav-pane {
+    -fx-background-color: #0B2341; /* Auburn Blue */
+    -fx-padding: 10;
+
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
+}
+
+/* --- Navigation Title --- */
+.nav-title {
+    -fx-font-size: 33px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-padding: 10 15;
+    -fx-background-color: rgba(11, 35, 65, 0.50);
+    -fx-border-radius: 6;
+}
+
+/* --- Navigation Buttons --- */
+.nav-button {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: rgba(11, 35, 65, 0.80);
+    -fx-border-radius: 8;
+    -fx-padding: 4 10;
+    -fx-border-color: #E86100; /* Auburn Orange Border */
+    -fx-border-width: 2px;
+    -fx-transition: all 2.0s ease-in-out;
+}
+
+/* --- Button Hover Effect --- */
+.nav-button:hover {
+    -fx-background-color: rgba(232, 97, 0, 0.75); /* Auburn Orange */
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+    -fx-effect: dropshadow(three-pass-box, rgba(232, 97, 0, 0.6), 10, 0, 0, 5);
+}
+
+/* --- Button Click Animation --- */
+.nav-button:pressed {
+    -fx-background-color: rgba(232, 97, 0, 0.50); /* Auburn Orange */
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+    -fx-rotate: -3;
+}
+
+/* --- Active View Highlight (When a View is Loaded) --- */
+.nav-button:selected, .nav-button:focused {
+    -fx-background-color: #E86100; /* Auburn Orange */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(232, 97, 0, 0.8), 15, 0, 0, 5);
+    -fx-border-width: 3px;
+}
+
+/* --- Animated Glow for Active View --- */
+@keyframes glowing {
+    0% { -fx-effect: dropshadow(three-pass-box, rgba(232, 97, 0, 0.7), 10, 0, 0, 3); }
+    50% { -fx-effect: dropshadow(three-pass-box, rgba(232, 97, 0, 0.9), 15, 0, 0, 4); }
+    100% { -fx-effect: dropshadow(three-pass-box, rgba(232, 97, 0, 0.7), 10, 0, 0, 3); }
+}
+
+.nav-button:focused {
+    -fx-animation: glowing 1.5s infinite;
+}
+
+/* --- Content Pane Styling --- */
+.content-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 3);
+}
+
+/* --- Sidebar Expand/Collapse Animation --- */
+@keyframes slideIn {
+    0% { -fx-translate-x: -50px; -fx-opacity: 0; }
+    100% { -fx-translate-x: 0; -fx-opacity: 1; }
+}
+
+.nav-pane {
+    -fx-animation: slideIn 2.0s ease-in-out;
+}
+
+/* --- Navigation Pane Logo Styling --- */
+.nav-logo {
+    -fx-border-color: #E86100; /* Auburn Orange Border */
+    -fx-border-width: 20px;
+    -fx-border-radius: 6;
+    -fx-effect: dropshadow(three-pass-box, rgba(232, 97, 0, 0.7), 10, 0, 0, 5);
+    -fx-alignment: center;
+    -fx-margin-bottom: 10px;
+}

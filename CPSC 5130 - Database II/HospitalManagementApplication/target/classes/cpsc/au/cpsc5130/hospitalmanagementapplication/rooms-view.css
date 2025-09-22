@@ -1,0 +1,162 @@
+/* --- Room TabPane Styling (More Compact) --- */
+.room-tab-pane {
+    -fx-tab-min-width: 85px;
+    -fx-tab-min-height: 28px;
+    -fx-background-color: transparent;
+}
+
+/* --- Default Tab Styling (Auburn Orange with Contrast Borders) --- */
+.tab {
+    -fx-background-color: linear-gradient(to bottom, #E86100, #F68B1D); /* Auburn Orange Gradient */
+    -fx-border-color: #0B2341; /* Auburn Blue Border */
+    -fx-border-width: 2px 2px 0px 2px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 12;
+    -fx-border-radius: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 6, 0, 0, 3);
+    -fx-transition: all 0.3s ease-in-out;
+    -fx-font-size: 16px;
+}
+
+/* --- Hover Effect (Shimmer Effect with White Text Glow) --- */
+.tab:hover {
+    -fx-background-color: linear-gradient(to bottom, #D45500, #F68B1D); /* Dark Auburn Orange */
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.15;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 140, 0, 1), 12, 0, 0, 5);
+}
+
+/* --- Clicked Tab Effect (Smooth Scale & Rotation) --- */
+.tab:pressed {
+    -fx-background-color: rgba(232, 97, 0, 0.75);
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+    -fx-rotate: -2;
+    -fx-effect: dropshadow(three-pass-box, rgba(232, 97, 0, 0.7), 10, 0, 0, 4);
+}
+
+/* --- Selected Tab (Turns Auburn Blue with Orange Borders & Animation) --- */
+.tab:selected {
+    -fx-background-color: linear-gradient(to bottom, #0B2341, #123A5F); /* Auburn Blue Gradient */
+    -fx-border-color: #E86100; /* Auburn Orange Border */
+    -fx-border-width: 2px 2px 0px 2px;
+    -fx-translate-y: -2px; /* Slight Lift */
+    -fx-animation: activeTabPulse 2s infinite alternate;
+    -fx-text-fill: white;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* --- Fix: Ensure White Text on Selected Tab --- */
+.tab:selected > .tab-container > .tab-label {
+    -fx-text-fill: white !important;
+    -fx-font-weight: bold;
+}
+
+/* --- Apply White Text to Selected Tab (Fix for Label Inside Tab) --- */
+.tab:selected .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* --- Animated Pulse for Active Tab (Subtle Glow) --- */
+@keyframes activeTabPulse {
+    0% { -fx-effect: dropshadow(three-pass-box, rgba(11, 35, 65, 0.6), 10, 0, 0, 3); }
+    50% { -fx-effect: dropshadow(three-pass-box, rgba(11, 55, 95, 1), 16, 0, 0, 6); }
+    100% { -fx-effect: dropshadow(three-pass-box, rgba(11, 35, 65, 0.6), 10, 0, 0, 3); }
+}
+
+/* --- Slide-In Animation for Tabs on Load --- */
+@keyframes slideInTabs {
+    0% { -fx-translate-y: -12px; -fx-opacity: 0; }
+    100% { -fx-translate-y: 0; -fx-opacity: 1; }
+}
+
+.room-tab-pane {
+    -fx-animation: slideInTabs 0.5s ease-in-out;
+}
+
+/* --- Room Status Header Styling (For Tab Content) --- */
+.room-status-header {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: #0B2341; /* Auburn Blue */
+    -fx-padding: 6;
+    -fx-border-radius: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 8, 0, 0, 4);
+}
+
+/* --- Room Buttons (Inside Each Tab) --- */
+.room-button {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-min-width: 105px;
+    -fx-min-height: 105px;
+    -fx-border-radius: 0;
+    -fx-border-width: 3;
+    -fx-border-color: #0B2341;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* --- Available Room (Auburn Blue) --- */
+.available-room {
+    -fx-background-color: #0B2341;
+    -fx-text-fill: white;
+}
+
+/* --- Occupied Room (Auburn Orange) --- */
+.occupied-room {
+    -fx-background-color: #E86100;
+    -fx-text-fill: white;
+}
+
+/* --- Button Hover Effect --- */
+.room-button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(three-pass-box, rgba(232, 97, 0, 0.6), 10, 0, 0, 5);
+}
+
+/* --- Button Click Animation --- */
+.room-button:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+/* --- Auburn-Themed Header Container --- */
+.header-container {
+    -fx-background-color: linear-gradient(to right, #0B2341, #123A5F); /* Auburn Blue Gradient */
+    -fx-padding: 10; /* Removed extra bottom padding */
+    -fx-alignment: center;
+    -fx-border-color: #E86100; /* Auburn Orange Border */
+    -fx-border-width: 3px;
+    -fx-border-radius: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 12, 0, 0, 6);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* --- Auburn-Themed Header Text --- */
+.header-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-font-family: "Arial Black";
+    -fx-letter-spacing: 1.5px;
+    -fx-effect: dropshadow( one-pass-box , rgba(0, 0, 0, 0.6) , 4 , 0 , 2 , 2 );
+}
+
+
+
+/* --- Animated Entrance for Header (Slide & Fade In) --- */
+@keyframes headerFadeIn {
+    0% { -fx-translate-y: -15px; -fx-opacity: 0; }
+    100% { -fx-translate-y: 0; -fx-opacity: 1; }
+}
+
+.header-container {
+    -fx-animation: headerFadeIn 0.6s ease-in-out;
+}

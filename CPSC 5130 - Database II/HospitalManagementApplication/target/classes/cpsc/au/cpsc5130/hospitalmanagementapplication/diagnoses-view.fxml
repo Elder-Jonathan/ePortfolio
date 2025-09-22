@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="12"
+      fx:controller="cpsc.au.cpsc5130.hospitalmanagementapplication.DiagnosesController"
+      stylesheets="@diagnoses-view.css">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <VBox styleClass="header-container">
+        <Label text="Diagnosis Catalog" styleClass="header-label"/>
+    </VBox>
+    <!-- TableView with Styled Columns -->
+    <TableView fx:id="diagnosisTable" prefHeight="300" styleClass="diagnosis-table">
+        <columns>
+            <TableColumn fx:id="colDiagnosisId" text="ID" minWidth="100"/>
+            <TableColumn fx:id="colDiagnosisName" text="Name" minWidth="500"/>
+        </columns>
+    </TableView>
+
+    <!-- Diagnosis Details Section -->
+    <VBox spacing="8" styleClass="details-container">
+        <Label text="Diagnosis Details" styleClass="header-label"/>
+
+        <HBox spacing="8">
+            <Label text="Diagnosis Name:" styleClass="label-title"/>
+            <TextField fx:id="txtDiagnosisName" prefWidth="250"/>
+        </HBox>
+
+        <VBox spacing="4">
+            <Label text="Description:" styleClass="label-title"/>
+            <TextArea fx:id="txtDescription" prefWidth="450" prefRowCount="5" wrapText="true" styleClass="description-text"/>
+        </VBox>
+    </VBox>
+
+    <!-- Buttons with Auburn-Themed Animation -->
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Add" onAction="#handleAdd" styleClass="button-add"/>
+        <Button text="Update" onAction="#handleUpdate" styleClass="button-update"/>
+        <Button text="Delete" onAction="#handleDelete" styleClass="button-delete"/>
+    </HBox>
+</VBox>

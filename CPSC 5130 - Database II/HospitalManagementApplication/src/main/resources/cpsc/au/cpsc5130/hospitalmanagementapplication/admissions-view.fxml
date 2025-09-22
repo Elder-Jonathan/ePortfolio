@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="12"
+      fx:controller="cpsc.au.cpsc5130.hospitalmanagementapplication.AdmissionsController"
+      stylesheets="@admissions-view.css">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <!-- Title Header (Admissions Catalog) -->
+    <HBox alignment="CENTER" styleClass="header-container">
+        <Label text="Admissions Catalog" styleClass="header-label"/>
+    </HBox>
+
+    <!-- Admissions Table (Fixed Size for 800x800 View) -->
+    <TableView fx:id="admissionTable" prefHeight="300" prefWidth="780" styleClass="admission-table">
+        <columns>
+            <TableColumn fx:id="colAdmissionId" text="ID" prefWidth="70"/>
+            <TableColumn fx:id="colPatientId" text="Patient ID" prefWidth="80"/>
+            <TableColumn fx:id="colRoomNumber" text="Room #" prefWidth="60"/>
+            <TableColumn fx:id="colAdmissionDate" text="Admission Date" prefWidth="110"/>
+            <TableColumn fx:id="colDischargeDate" text="Discharge Date" prefWidth="110"/>
+            <TableColumn fx:id="colDoctorId" text="Doctor ID" prefWidth="70"/>
+            <TableColumn fx:id="colDiagnosis" text="Diagnosis" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <!-- Admission Details Section (Always Visible & Styled) -->
+    <VBox spacing="8" styleClass="details-container">
+        <HBox alignment="CENTER" styleClass="header-container">
+            <Label text="Admission Details" styleClass="header-label"/>
+        </HBox>
+
+        <GridPane hgap="15" vgap="12" styleClass="grid-container">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+            </columnConstraints>
+
+            <!-- Row 0: Patient ID, Room # -->
+            <HBox spacing="8" GridPane.rowIndex="0" GridPane.columnIndex="0">
+                <Label text="Patient ID:" styleClass="label-title"/>
+                <TextField fx:id="txtPatientId" styleClass="text-field"/>
+            </HBox>
+            <HBox spacing="8" GridPane.rowIndex="0" GridPane.columnIndex="1">
+                <Label text="Room #:" styleClass="label-title"/>
+                <TextField fx:id="txtRoomNumber" styleClass="text-field"/>
+            </HBox>
+
+            <!-- Row 1: Admission Date, Discharge Date -->
+            <HBox spacing="8" GridPane.rowIndex="1" GridPane.columnIndex="0">
+                <Label text="Admission Date:" styleClass="label-title"/>
+                <DatePicker fx:id="dpAdmissionDate" styleClass="date-picker"/>
+            </HBox>
+            <HBox spacing="8" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                <Label text="Discharge Date:" styleClass="label-title"/>
+                <DatePicker fx:id="dpDischargeDate" styleClass="date-picker"/>
+            </HBox>
+
+            <!-- Row 2: Doctor ID, Diagnosis -->
+            <HBox spacing="8" GridPane.rowIndex="2" GridPane.columnIndex="0">
+                <Label text="Doctor ID:" styleClass="label-title"/>
+                <TextField fx:id="txtPrimaryDoctorId" styleClass="text-field"/>
+            </HBox>
+            <HBox spacing="8" GridPane.rowIndex="2" GridPane.columnIndex="1">
+                <Label text="Diagnosis:" styleClass="label-title"/>
+                <ComboBox fx:id="comboDiagnosis" prefWidth="150" styleClass="text-field"/>
+            </HBox>
+        </GridPane>
+    </VBox>
+
+    <!-- CRUD Buttons -->
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Add" onAction="#handleAdd" styleClass="button-add"/>
+        <Button text="Update" onAction="#handleUpdate" styleClass="button-update"/>
+        <Button text="Delete" onAction="#handleDelete" styleClass="button-delete"/>
+    </HBox>
+</VBox>
